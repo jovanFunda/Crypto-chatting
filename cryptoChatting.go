@@ -82,7 +82,7 @@ func main() {
 	var sender *Node = newNode()
 	var receiver *Node = newNode()
 
-	var message, signature []byte = sender.SendMessage("Hello to you!", receiver.publicKey)
+	var message, signature []byte = sender.SendMessage("Hello world!", receiver.publicKey)
 
 	var receivedMessage []byte = receiver.ReadMessage(message)
 
